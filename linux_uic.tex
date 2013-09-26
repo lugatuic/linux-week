@@ -38,6 +38,7 @@
 \subsection{Wireless Settings}
 \frame
 {
+    \frametitle{network settings}
      \includegraphics[totalheight=0.8\textheight]{uicwificonfig.png}
 }
 \frame
@@ -45,9 +46,10 @@
     \frametitle{network settings}
     \begin{itemize}
     \item{Network name: UIC-WiFi}
-    \item{Wireless Security: WPA & WPA2 Enterprise}
+    \item{Wireless Security: WPA \& WPA2 Enterprise}
     \item{Authentication: PEAP}
     \item{Anonymous Identity: anonymous}
+    \item{CA Cert: AddTrust\_External\_Root}
     \item{inner Authentication: MSCHAPv2}
     \item{Username: ACCC NETID}
     \item{Password: ACCC PASSWORD}
@@ -99,55 +101,7 @@ Select Duplex if you want
 
 
 }
-\section{Turnin}
-\subsection{What is Turnin}
-\frame
-{
-    \frametitle{What is turnin}
-    turnin is a a unix program for turning in CS programing assignments.
-}
-
-\subsection{Features}
-\frame
-{
-    \frametitle{Features of Turnin}
-    \begin{itemize}
-    \item{Verify that your program was turned in successfully}
-    \item{turn in asignment multiple times (until the deadline)}
-    \end{itemize}
-}
-\subsection{Usage}
-\subsection{Finding Assingments}
-\frame
-{
-    \frametitle{Checking the List of Assignments}
-	turnin -c cs102 -l
-}
-\subsection{Turning in an Assignment}
-\frame
-{
-    \frametitle{Turning in an Assignment}
-	turnin -c cs102 -p prog1 myfile\\
-	turnin -c cs102 -p prog1 MyProjectFolder\\
-	turnin -c cs102 -p prog1 *.java
-}
-\subsection{Verifying Turnin}
-\frame
-{
-    \frametitle{Ensureing That an Assigment Was Turned In}
-	turnin -c cs102 -p prog1 -v
-
-}
-\subsection{Resubmitting an Assingment}
-\frame
-{
-    \frametitle{Turning in an Assignment a Second Time}
-	turnin -c cs102 -p prog1 myfile\\
-	turnin -c cs102 -p prog1 MyProjectFolder\\
-	turnin -c cs102 -p prog1 *.java\\
-	
-}
-\section{UIC Servers}
+section{UIC Servers}
 \frame
 {
     \frametitle{UIC Servers}
@@ -159,6 +113,7 @@ Select Duplex if you want
     \frametitle{icarus.uic.edu}
     \begin{itemize}
     \item{ACCC server}
+    \item{Status: RETIRED}
     \item{web hosting}
     \item{php, perl, bluestem, html}
     \item{shell access}
@@ -174,8 +129,38 @@ Select Duplex if you want
     \item{CS Department Server}
     \item{html}
     \item{Web hosting}
+    \item{shell access}
     \item{http://cs.uic.edu/$\sim$cslogin/}
-    \item{RHEL 5.5}
+    \item{RHEL 5.9}
+    \end{itemize}
+}
+\subsection{Ernie}
+\frame
+{
+    \frametitle{Ernie}
+    \begin{itemize}
+    \item{CS Department Server}
+    \item{html}
+    \item{Web hosting}
+    \item{shell access}
+    \item{http://cs.uic.edu/$\sim$cslogin/}
+    \item{RHEL 5.9}
+    \end{itemize}
+}
+\subsection{People}
+\frame
+{
+    \frametitle{People}
+    \begin{itemize}
+    \item{ACCC Hosting Service}
+    \item{Must activate account: http://people.uic.edu/}
+    \item{Web hosting}
+    \item{SQLite (MySQL through another ACCC service)}
+    \item{PHP, CGI, Ruby on Rails, Node.js, Python, etc}
+    \item{shell access}
+    \item{SMB network share}
+    \item{http://$\sim$netid.people.uic.edu/}
+    \item{RHEL 6.4 VM}
     \end{itemize}
 }
 \subsection{Webspace}
