@@ -16,6 +16,8 @@ The Presentations
 Building the Presnetations
 ====================================
 
+**EDIT:** The `SConstruct` file present in this repository has since been replaced by a simple `Makefile`. The instructions below have been preserved for historical reasons. `texlive-most` is still needed for compilation, however.
+
 The presentations are built with scons and latex/beamer.
 
 1. install latex with beamer for your platform:

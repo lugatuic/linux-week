@@ -1,12 +1,9 @@
-TARGETS = code.pdf install_ubuntu.pdf linux_uic.pdf remote_access.pdf shell.pdf
+TOPTARGETS := all clean
 
-all: $(TARGETS)
+SUBDIRS := $(wildcard */.)
 
-clean:
-	git clean -fx
+$(TOPTARGETS): $(SUBDIRS)
+$(SUBDIRS):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
 
-%.pdf: %.tex
-	pdflatex $<
-
-.PHONY: all clean
-
+.PHONY: $(TOPTARGETS) $(SUBDIRS)
