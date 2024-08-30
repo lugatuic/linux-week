@@ -1,3 +1,5 @@
+all: coreutils_and_filesystem.pdf coreutils_and_filesystem.handout.pdf
+
 coreutils_and_filesystem.pdf: coreutils_and_filesystem.tex
 
 coreutils_and_filesystem.handout.pdf: coreutils_and_filesystem.handout.tex
@@ -7,8 +9,6 @@ coreutils_and_filesystem.handout.tex: coreutils_and_filesystem.tex
 
 %.pdf: %.tex
 	latexmk -pdf -shell-escape -use-make $^
-
-all: coreutils_and_filesystem.pdf coreutils_and_filesystem.handout.pdf
 
 clean:
 	latexmk -CA
