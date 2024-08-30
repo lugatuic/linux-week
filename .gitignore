@@ -7,3 +7,10 @@
 *.snm
 *.toc
 *.vrb
+*.pyg
+*.fdb_latexmk
+
+*.handout.tex
+
+_minted-*/
+svg-inkscape/
