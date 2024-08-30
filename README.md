@@ -6,3 +6,7 @@ To build the slides for your own use, simply:
 
 - install `texlive` through your package manager of choice (recommend `-most` or `-full` for an easy experience)
 - run `make`
+
+## Credits
+
+`coreutils_and_filesystem` - @lowpolyneko
