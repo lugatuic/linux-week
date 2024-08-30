@@ -9,4 +9,4 @@ To build the slides for your own use, simply:
 
 ## Credits
 
-`coreutils_and_filesystem` - @lowpolyneko
+`coreutils_and_filesystem` - [@lowpolyneko](https://github.com/lowpolyneko)
