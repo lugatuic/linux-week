@@ -1,0 +1,133 @@
+\documentclass{beamer}
+
+\usepackage{svg}
+
+\usetheme{Boadilla}
+
+% Title
+\title{Package Management in Linux}
+\subtitle{Linux Week \the\year{}}
+\author{Soham S Gumaste}
+\date{\today}
+\institute{Linux Users Group @ UIC}
+
+\begin{document}
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}{Table of Contents}
+	\tableofcontents[pausesections]
+\end{frame}
+
+\section{Definitions}
+\begin{frame}{What is a Package?}
+	Most \textbf{software applications} designed for \underline{Linux}
+	systems are distributed as \texttt{packages}, which are archives that
+	contain pre-compiled \textbf{binary software files}, installation
+	scripts, \textbf{configuration files}, \textbf{dependency
+	requirements}, and other details about the software.
+\end{frame}
+
+\begin{frame}{What is a Dependency?}
+	Simply put, if a package needs a second package to work, the second
+	package is a dependency of the first.
+	
+	\pause
+
+	Think of them like \textbf{course prerequisites}!
+\end{frame}
+
+\begin{frame}{Repository}
+	A collection of \textbf{packages} provided to you to install software.
+\end{frame}
+
+\begin{frame}{Why should I care?}
+	How many of you have installed something from a random website and have
+	it break your computer?! (Show of hands)
+
+	\pause
+
+	Packages installed from package managers are \textbf{vetted} by your
+	distribution (Ubuntu, Fedora etc) and will almost always work as
+	expected and NOT break your system!
+
+	\pause
+
+	Packages are also \textbf{cryptographically signed} to ensure you never
+	get non-genuine packages.
+\end{frame}
+
+\section{Package Management in Ubuntu}
+\begin{frame}{Table of Contents}
+	\tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}{Package Management in Ubuntu}
+	Ubuntu uses a tool called \texttt{apt} to manage packages.
+
+	Apt will reach out to Ubuntu servers and download, verify, and install
+	packages you ask for.
+
+	\begin{exampleblock}{Example}
+		\texttt{sudo apt install cmatrix}
+
+		\texttt{sudo} is needed as installing packages needs root privileges!
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}{Important}
+	Always read all apt prompts and answer them accordingly!
+	(Google "LinusTechTips yes do as I say")
+\end{frame}
+
+\begin{frame}{Common Apt Commands}
+	\begin{enumerate}
+		\item Install a new package \texttt{sudo apt install
+			<package\_name>}
+		\item Search for a package in the repositories \texttt{apt
+			search <search\_term>} Note that \texttt{search\_term}
+			can be a \underline{RegEx}!
+		\item Remove a package \texttt{sudo apt remove <package\_name>}
+		\item Update all packages \texttt{sudo apt update} then
+			\texttt{sudo apt upgrade}
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}{Closing Remarks}
+	\begin{center}
+		\Huge Thank you!
+	\end{center}
+\end{frame}
+
+\begin{frame}{Closing Remarks}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\textbf{Officers}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.60\textwidth]{officers.png}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			The information in this presentation will be made
+			available\footnotemark on our website!\\
+			\url{https://lug.cs.uic.edu}
+			
+			\bigskip
+			Join our Discord!
+
+			\begin{figure}
+				\centering
+				\includesvg[width=0.5\textwidth]{lug-discord.svg}
+				\caption{\url{https://discord.gg/NgxTR7PX5e}}
+			\end{figure}
+		\end{column}
+	\end{columns}
+
+	\footnotetext{sooner or later}
+\end{frame}
+
+\end{document}
+
+% vim: set tw=80 ts=4 sw
