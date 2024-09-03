@@ -10,6 +10,7 @@ To build the slides for your own use, simply:
 ## Credits
 
 - `coreutils_and_filesystem` - [@lowpolyneko](https://github.com/lowpolyneko), [@bmiddha](https://github.com/bmiddha)
-- `package` - [@SohamG](https://github.com/SohamG)
+- `package` - [@SohamG](https://github.com/SohamG), [@Olympicene](https://github.com/Olympicene)
 - `shell_piping` - [@SohamG](https://github.com/SohamG)
 - `why_free` - [@SohamG](https://github.com/SohamG)
+- `why_you_should_use_linux` - [@Olympicene](https://github.com/Olympicene)
