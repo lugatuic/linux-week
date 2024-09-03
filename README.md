@@ -9,4 +9,7 @@ To build the slides for your own use, simply:
 
 ## Credits
 
-`coreutils_and_filesystem` - [@lowpolyneko](https://github.com/lowpolyneko)
+- `coreutils_and_filesystem` - [@lowpolyneko](https://github.com/lowpolyneko), [@bmiddha](https://github.com/bmiddha)
+- `package` - [@SohamG](https://github.com/SohamG)
+- `shell_piping` - [@SohamG](https://github.com/SohamG)
+- `why_free` - [@SohamG](https://github.com/SohamG)
