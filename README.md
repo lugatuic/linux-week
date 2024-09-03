@@ -14,3 +14,7 @@ To build the slides for your own use, simply:
 - `shell_piping` - [@SohamG](https://github.com/SohamG)
 - `why_free` - [@SohamG](https://github.com/SohamG)
 - `why_you_should_use_linux` - [@Olympicene](https://github.com/Olympicene)
+
+## Archive
+
+There are older presentations (>10 years) old archived in the `_archive` folder! Check them out for fun. The `Makefile` builds these too.
