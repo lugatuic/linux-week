@@ -1,6 +1,6 @@
 TOPTARGETS := all clean
 
-SUBDIRS := $(wildcard */.)
+SUBDIRS := $(filter-out _archive/., $(wildcard */.))
 
 $(TOPTARGETS): $(SUBDIRS)
 $(SUBDIRS):
