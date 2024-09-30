@@ -1,13 +1,14 @@
 \documentclass{beamer}
 
 \usepackage{svg}
+\usepackage{minted}
 
-\usetheme{Boadilla}
+\usetheme{seville}
 
 % Title
 \title{Introduction to the Linux Shell}
 \subtitle{Linux Week \the\year{}}
-\author{Soham S Gumaste}
+\author{Soham S Gumaste \& Jacob Cohen}
 \date{\today}
 \institute{Linux Users Group @ UIC}
 
@@ -90,10 +91,26 @@
 	\end{block}
 \end{frame}
 
-\begin{frame}{The possibilities are ENDLESS!}
+\begin{frame}[fragile]
+	\frametitle{The possibilities are ENDLESS!}
 	There is no limit on how many commands you can chain together.
 
-	Stay tuned to LUG@UIC for more on this topic!
+	\pause
+{
+		\tiny
+	\begin{minted}{bash}
+# What are the most common 50 words in Shakespeare's Hamlett?
+$ curl https://www.gutenberg.org/files/1524/1524-0.txt 2>/dev/null | grep -wPo '\b\w+\b' \
+		| grep -v '^$' | sort | uniq -c | sort -nr | head -50 | column -s' 't
+	\end{minted}
+	\begin{minted}{text}
+1122 the        555 you         365 HAMLET      284 d           236 me          196 him         163 as          144 are         125 by          113 what
+770 and         515 a           350 is          281 And         229 your        186 _           157 will        141 but         125 all         111 shall
+745 of          486 in          326 not         278 his         220 be          179 he          152 so          140 on          124 To          111 our
+691 to          443 my          287 this        272 with        204 lord        173 have        152 or          135 That        116 we          111 HORATIO
+613 I           367 it          285 that        252 s           198 for         169 The         149 do          130 But         115 O           111 Hamlet
+	\end{minted}
+}
 \end{frame}
 
 \begin{frame}{Closing Remarks}
@@ -122,7 +139,7 @@
 			\begin{figure}
 				\centering
 				\includesvg[width=0.5\textwidth]{lug-discord.svg}
-				\caption{\url{https://discord.gg/NgxTR7PX5e}}
+				\caption{\scriptsize\url{https://discord.gg/NgxTR7PX5e}}
 			\end{figure}
 		\end{column}
 	\end{columns}
@@ -132,4 +149,4 @@
 
 \end{document}
 
-% vim: set tw=80 ts=4 sw
+% vim: set tw=80 t=4 sw

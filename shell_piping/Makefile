@@ -15,4 +15,7 @@ clean:
 	rm -f shell_piping.handout.tex *.snm *.nav *.vrb *.pyg
 	rm -rf _minted-*/ svg-inkscape/
 
+open: shell_piping.pdf
+	open shell_piping.pdf
+
 .PHONY: all clean
